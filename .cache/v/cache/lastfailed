@@ -1,0 +1,19 @@
+{
+  "administration.py::test_createuser3": true,
+  "administration.py::test_deletebulkusernonexisting": true,
+  "administration.py::test_deleteusernonexist": true,
+  "administration.py::test_emailId": true,
+  "administration.py::test_firstname": true,
+  "administration.py::test_lastname": true,
+  "administration.py::test_retrieveuser2": true,
+  "administration.py::test_updateall": true,
+  "administration.py::test_verifydeleteduser": true,
+  "companydownloadlimit.py::test_mongoremovecompanyId": true,
+  "contactdownloadlimit.py::test_mongoremovecontactid": true,
+  "updateuser.py::test_createuser": true,
+  "updateuser.py::test_deletemodifieduser": true,
+  "updateuser.py::test_listuser": true,
+  "updateuser.py::test_updateall": true,
+  "updateuser.py::test_usedseatsincrease": true,
+  "usedSeats.py::test_mongoinitialseats": true
+}

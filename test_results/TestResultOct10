@@ -1,0 +1,135 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.2, pytest-3.2.2, py-1.4.34, pluggy-0.4.0 -- c:\users\james.marturillas\appdata\local\programs\python\python36-32\python.exe
+cachedir: .cache
+rootdir: C:\Users\james.marturillas\Documents\automation\b2b\api\b2b-QAAutomation, inifile:
+collecting ... collected 124 items
+
+administration.py::test_createuser PASSED
+administration.py::test_retrieveuser1 PASSED
+administration.py::test_createuserduplicate PASSED
+administration.py::test_firstname PASSED
+administration.py::test_lastname PASSED
+administration.py::test_emailId PASSED
+administration.py::test_updateall PASSED
+administration.py::test_deleteuser PASSED
+administration.py::test_deleteusernonexist PASSED
+administration.py::test_verifydeleteduser PASSED
+administration.py::test_createbulkuser PASSED
+administration.py::test_viewsubscription PASSED
+administration.py::test_listuser PASSED
+administration.py::test_deletebulkuser PASSED
+administration.py::test_deletebulkusernonexisting PASSED
+administration.py::test_createuser3 PASSED
+administration.py::test_retrieveuser2 PASSED
+administration.py::test_deleteoneuser PASSED
+companydownloadlimit.py::test_viewsubscriptionbefore PASSED
+companydownloadlimit.py::test_mongoremovecompanyId PASSED
+companydownloadlimit.py::test_viewsubscriptionafter PASSED
+companydownloadlimit.py::test_onecompanydownloadlimit PASSED
+companydownloadlimit.py::test_onecompanydownloadlimitagain PASSED
+companydownloadlimit.py::test_multicompanydownloadlimit PASSED
+companysearch.py::test_companysearchbycompany PASSED
+companysearch.py::test_companysearchbycompanyhq <Response [200]>
+PASSED
+companysearch.py::test_companydetailssearch PASSED
+companysearch.py::test_companysearchbywebsite PASSED
+companysearch.py::test_companydetailswebsite PASSED
+companysearch.py::test_companysearchbyindustry PASSED
+companysearch.py::test_companydetailsindustry PASSED
+companysearch.py::test_companysearchbysubIndustry PASSED
+companysearch.py::test_companydetailssubIndustry PASSED
+companysearch.py::test_companysearchbycity PASSED
+companysearch.py::test_companysearchbystate PASSED
+companysearch.py::test_companysearchbycountry PASSED
+companysearch.py::test_companysearchbyregion PASSED
+companysearch.py::test_companysearchbyproduct PASSED
+companysearch.py::test_companydetailsproduct PASSED
+companysearch.py::test_companysearchbyproductParentCategory PASSED
+companysearch.py::test_companysearchbyproductCategory PASSED
+companysearch.py::test_companysearchbyall PASSED
+companysearch.py::test_companysearchlimitsize PASSED
+companysearch.py::test_companysearchlimitzerosize PASSED
+companysearch.py::test_companysearchinvalidlimitsize PASSED
+companysearch.py::test_companysearchminusonelimitsize PASSED
+companysearch.py::test_companysearchminusnumlimitsize PASSED
+companysearch.py::test_companysearchbycompanycomma Wabtec
+PASSED
+companysearch.py::test_companydetailssearchnamecomma PASSED
+companysearch.py::test_searchcompanybyid PASSED
+contactdownloadlimit.py::test_viewsubscriptionbefore PASSED
+contactdownloadlimit.py::test_mongoremovecontactid PASSED
+contactdownloadlimit.py::test_viewsubscriptionafter PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimit PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimitagain PASSED
+contactdownloadlimit.py::test_multicontactdownloadlimit PASSED
+contactsearch.py::test_contactsearchbycompany PASSED
+contactsearch.py::test_contactdetailssearch PASSED
+contactsearch.py::test_contactsearchbywebsite PASSED
+contactsearch.py::test_contactdetailswebsite PASSED
+contactsearch.py::test_contactsearchbytitle PASSED
+contactsearch.py::test_contactsearchbyemailid PASSED
+contactsearch.py::test_contactsearchbycity PASSED
+contactsearch.py::test_contactsearchbystate PASSED
+contactsearch.py::test_contactsearchbycountry PASSED
+contactsearch.py::test_contactsearchbyregion PASSED
+contactsearch.py::test_contactsearchbyproduct PASSED
+contactsearch.py::test_contactdetailsproduct PASSED
+contactsearch.py::test_contactsearchbyparentdepartment PASSED
+contactsearch.py::test_contactdetailsparentdepartment PASSED
+contactsearch.py::test_contactsearchbyseniority PASSED
+contactsearch.py::test_contactdetailsseniority PASSED
+contactsearch.py::test_contactsearchbyfullName PASSED
+contactsearch.py::test_contactsearchbyfirstname PASSED
+contactsearch.py::test_contactsearchbylastName PASSED
+contactsearch.py::test_contactsearchbyproductParentCategory PASSED
+contactsearch.py::test_contactsearchbyproductCategory PASSED
+contactsearch.py::test_contactsearchbyall PASSED
+contactsearch.py::test_contactsearchlimitsize PASSED
+contactsearch.py::test_contactsearchlimitzerosize PASSED
+contactsearch.py::test_contactsearchinvalidlimitsize PASSED
+contactsearch.py::test_contactsearchminusonelimitsize PASSED
+contactsearch.py::test_contactsearchminusnumlimitsize PASSED
+contactsearch.py::test_contactsearchemailphone PASSED
+contactsearch.py::test_contactsearchemailnonphone PASSED
+contactsearch.py::test_contactsearchbycompanycomma PASSED
+contactsearch.py::test_contactdetailssearchcompanycomma PASSED
+createcsvfile.py::test_contactfullnamecompanyname500 PASSED
+createcsvfile.py::test_contactfullnamecompanyname1000 PASSED
+createcsvfile.py::test_contactfullnamewebsite500 PASSED
+createcsvfile.py::test_contactfirstlastcompanyname500 PASSED
+createcsvfile.py::test_contactfirstlastwebsite500 PASSED
+createcsvfile.py::test_contactfirstlastwebsite2000 PASSED
+createcsvfile.py::test_contactcreateId500 PASSED
+performance.py::test_contactsearch1 PASSED
+performance.py::test_contactsearch4000 PASSED
+performance.py::test_contactsearch2000 PASSED
+performance.py::test_contactsearch1500 PASSED
+performance.py::test_contactsearch1000 PASSED
+performance.py::test_contactsearch500 PASSED
+performance.py::test_contactsearch100 PASSED
+performance.py::test_searchcompanybyid1 PASSED
+performance.py::test_companysearch9000 PASSED
+performance.py::test_companysearch4000 PASSED
+performance.py::test_companysearch3000 PASSED
+performance.py::test_companysearch2000 PASSED
+performance.py::test_companysearch1500 PASSED
+performance.py::test_companysearch1000 PASSED
+performance.py::test_companysearch500 PASSED
+performance.py::test_companysearch100 PASSED
+performance.py::test_searchcompanyproductmapping PASSED
+performance.py::test_searchcontactproductmapping PASSED
+productMapping.py::test_searchcompanybyid PASSED
+productMapping.py::test_searchcontactbyid PASSED
+sameEmailUsers.py::test_createbulkuser PASSED
+updateuser.py::test_createuser PASSED
+updateuser.py::test_updateall PASSED
+updateuser.py::test_listuser ['584e2cbbe4b046bb00f4e802', '58db3103b3a00331b05af249', '58db311cb3a00331b05af24a', '58db311db3a00331b05af24b', '58e1fc36e4b0c736ce722f4f', '58e6d1c2e4b0c736ce7231a3', '58e73007e4b0386b9685a1ab', '58eeb852e4b01a1de85d4418', '58eec838e4b01a1de85d4542', '58eecccde4b01a1de85d4625', '58eed261e4b01a1de85d4862', '58eed29be4b01a1de85d4875', '58eed66ee4b01a1de85d48e3', '58eeda6ae4b01a1de85d49d2', '58eee2e8e4b01a1de85d4a8e', '58eee448e4b01a1de85d4b19', '58f5ab29e4b0ee1869a398b9', '58f5b16fe4b0ee1869a3994c', '58f5bdcce4b0ee1869a39a1c', '58f5c021e4b0ee1869a39a6e', '58f5c1bee4b0b9080b913623', '58f6ad85e4b04a7e19b38c12', '58f7b99de4b04a7e19b38edd', '58f7ba36e4b04a7e19b38ef7', '58f7f099e4b04a7e19b3902c', '58f9aefee4b055e0afbc049f', '59007277e4b0f62f8bbfa1b0', '59014171e4b055e0afbc09f7', '5901468ee4b055e0afbc0adb', '590149b5e4b055e0afbc0b4c', '59017949e4b0f62f8bbfa3c9', '59019627e4b0f62f8bbfa45b', '590a4e7ce4b0ec6f4c2eee74', '590a4e7ce4b0ec6f4c2eee75', '590a4e7ce4b0ec6f4c2eee76', '591167a0db1770b84c03505e', '59151966e4b0270f69e6ec04', '59223b2bdb1770b84c081cfd', '5990f1fde4b095e02dbfd060', '5990f74de4b095e02dbfd0aa', '599249eae4b095e02dbfd2ae', '5992555ae4b095e02dbfd343', '59a50c90e4b0e5c4618b9bd6', '59a50f17e4b0e5c4618b9ce1', '59a78ca7e4b0e5c4618b9e30', '59b5fdc7e4b0e5c4618ba248', '59c087afe4b04f69ec7f1b8f', '59c86186e4b0143814b6349a', '59c865a6e4b0143814b6355d', '59c982b3e4b0143814b63741', '59c99114e4b0143814b63804', '59cc389de4b0a3115e64ab86', '59cc3a65e4b0a3115e64ac11', '59cd8107e4b024b36434bfdd', '59cda4b6e4b024b36434c0f9', '59cdac92e4b024b36434c1ab', '59cdb209e4b024b36434c2f5', '59d171aae4b0b61c3558dff1', '59d2c9fae4b0b61c3558e0a0', '59d55fe0e4b0b61c3558e391', '59d6af7ee4b0b61c3558e4a7', '59daa5a4e4b0b61c3558e61c', '59dbded0e4b0fd8551cf5196', '59dbe84be4b0fd8551cf5244', '59dbeb8ae4b0fd8551cf52d1', '59dc15e7e4b0fd8551cf5361', '59dc15e7e4b0fd8551cf5363']
+PASSED
+updateuser.py::test_usedseatsincrease PASSED
+updateuser.py::test_deletemodifieduser PASSED
+usedSeats.py::test_mongoinitialseats PASSED
+usedSeats.py::test_initialseats PASSED
+usedSeats.py::test_createbulkuser PASSED
+usedSeats.py::test_deletebulkuser PASSED
+
+======================== 124 passed in 200.06 seconds =========================

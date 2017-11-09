@@ -1,0 +1,1 @@
+pytest -s -v administration.py companydownloadlimit.py companysearch.py contactdownloadlimit.py contactsearch.py createcsvfile.py performance.py productMapping.py sameEmailUsers.py updateuser.py usedSeats.py > TestResultOct12
