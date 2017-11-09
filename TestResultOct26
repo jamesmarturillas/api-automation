@@ -1,0 +1,361 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.2, pytest-3.2.2, py-1.4.34, pluggy-0.4.0 -- c:\users\james.marturillas\appdata\local\programs\python\python36-32\python.exe
+cachedir: .cache
+rootdir: C:\Users\james.marturillas\Documents\automation\b2b\api\b2b-QAAutomation, inifile:
+collecting ... collected 124 items
+
+administration.py::test_createuser PASSED
+administration.py::test_retrieveuser1 PASSED
+administration.py::test_createuserduplicate PASSED
+administration.py::test_firstname {'id': '59efd947e4b0f524435bed6f', 'firstName': 'Boom', 'lastName': 'Hammond', 'userName': 'Ann.Hammond761@pieology.com', 'licenseType': 'Enterprise', 'recordId': '3105', 'emailId': 'Ann.Hammond761@pieology.com', 'customerId': '56d51e63e4b03e8fed7945aa', 'subscriptionIds': ['5890e183e4b09dff05f82d05'], 'isActive': True, 'createdDate': 1508890951154, 'modifiedDate': 1508972974240, 'source': 'publicapi', 'roleIds': ['588587c3e4b005b20e701eb3']}
+FAILED
+administration.py::test_lastname FAILED
+administration.py::test_emailId FAILED
+administration.py::test_updateall FAILED
+administration.py::test_deleteuser PASSED
+administration.py::test_deleteusernonexist FAILED
+administration.py::test_verifydeleteduser FAILED
+administration.py::test_createbulkuser PASSED
+administration.py::test_viewsubscription PASSED
+administration.py::test_listuser PASSED
+administration.py::test_deletebulkuser PASSED
+administration.py::test_deletebulkusernonexisting FAILED
+administration.py::test_createuser3 FAILED
+administration.py::test_retrieveuser2 FAILED
+administration.py::test_deleteoneuser PASSED
+companydownloadlimit.py::test_viewsubscriptionbefore PASSED
+companydownloadlimit.py::test_mongoremovecompanyId PASSED
+companydownloadlimit.py::test_viewsubscriptionafter PASSED
+companydownloadlimit.py::test_onecompanydownloadlimit PASSED
+companydownloadlimit.py::test_onecompanydownloadlimitagain PASSED
+companydownloadlimit.py::test_multicompanydownloadlimit PASSED
+companysearch.py::test_companysearchbycompany PASSED
+companysearch.py::test_companysearchbycompanyhq <Response [200]>
+PASSED
+companysearch.py::test_companydetailssearch PASSED
+companysearch.py::test_companysearchbywebsite PASSED
+companysearch.py::test_companydetailswebsite PASSED
+companysearch.py::test_companysearchbyindustry PASSED
+companysearch.py::test_companydetailsindustry PASSED
+companysearch.py::test_companysearchbysubIndustry PASSED
+companysearch.py::test_companydetailssubIndustry PASSED
+companysearch.py::test_companysearchbycity PASSED
+companysearch.py::test_companysearchbystate PASSED
+companysearch.py::test_companysearchbycountry PASSED
+companysearch.py::test_companysearchbyregion PASSED
+companysearch.py::test_companysearchbyproduct PASSED
+companysearch.py::test_companydetailsproduct PASSED
+companysearch.py::test_companysearchbyproductParentCategory PASSED
+companysearch.py::test_companysearchbyproductCategory PASSED
+companysearch.py::test_companysearchbyall PASSED
+companysearch.py::test_companysearchlimitsize PASSED
+companysearch.py::test_companysearchlimitzerosize PASSED
+companysearch.py::test_companysearchinvalidlimitsize PASSED
+companysearch.py::test_companysearchminusonelimitsize PASSED
+companysearch.py::test_companysearchminusnumlimitsize PASSED
+companysearch.py::test_companysearchbycompanycomma Wabtec
+PASSED
+companysearch.py::test_companydetailssearchnamecomma PASSED
+companysearch.py::test_searchcompanybyid PASSED
+contactdownloadlimit.py::test_viewsubscriptionbefore PASSED
+contactdownloadlimit.py::test_mongoremovecontactid PASSED
+contactdownloadlimit.py::test_viewsubscriptionafter PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimit PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimitagain PASSED
+contactdownloadlimit.py::test_multicontactdownloadlimit PASSED
+contactsearch.py::test_contactsearchbycompany PASSED
+contactsearch.py::test_contactdetailssearch PASSED
+contactsearch.py::test_contactsearchbywebsite PASSED
+contactsearch.py::test_contactdetailswebsite PASSED
+contactsearch.py::test_contactsearchbytitle PASSED
+contactsearch.py::test_contactsearchbyemailid PASSED
+contactsearch.py::test_contactsearchbycity PASSED
+contactsearch.py::test_contactsearchbystate PASSED
+contactsearch.py::test_contactsearchbycountry PASSED
+contactsearch.py::test_contactsearchbyregion PASSED
+contactsearch.py::test_contactsearchbyproduct PASSED
+contactsearch.py::test_contactdetailsproduct PASSED
+contactsearch.py::test_contactsearchbyparentdepartment PASSED
+contactsearch.py::test_contactdetailsparentdepartment PASSED
+contactsearch.py::test_contactsearchbyseniority PASSED
+contactsearch.py::test_contactdetailsseniority PASSED
+contactsearch.py::test_contactsearchbyfullName PASSED
+contactsearch.py::test_contactsearchbyfirstname PASSED
+contactsearch.py::test_contactsearchbylastName PASSED
+contactsearch.py::test_contactsearchbyproductParentCategory PASSED
+contactsearch.py::test_contactsearchbyproductCategory PASSED
+contactsearch.py::test_contactsearchbyall PASSED
+contactsearch.py::test_contactsearchlimitsize PASSED
+contactsearch.py::test_contactsearchlimitzerosize PASSED
+contactsearch.py::test_contactsearchinvalidlimitsize PASSED
+contactsearch.py::test_contactsearchminusonelimitsize PASSED
+contactsearch.py::test_contactsearchminusnumlimitsize PASSED
+contactsearch.py::test_contactsearchemailphone PASSED
+contactsearch.py::test_contactsearchemailnonphone PASSED
+contactsearch.py::test_contactsearchbycompanycomma PASSED
+contactsearch.py::test_contactdetailssearchcompanycomma PASSED
+createcsvfile.py::test_contactfullnamecompanyname500 PASSED
+createcsvfile.py::test_contactfullnamecompanyname1000 PASSED
+createcsvfile.py::test_contactfullnamewebsite500 PASSED
+createcsvfile.py::test_contactfirstlastcompanyname500 PASSED
+createcsvfile.py::test_contactfirstlastwebsite500 PASSED
+createcsvfile.py::test_contactfirstlastwebsite2000 PASSED
+createcsvfile.py::test_contactcreateId500 PASSED
+performance.py::test_contactsearch1 PASSED
+performance.py::test_contactsearch4000 PASSED
+performance.py::test_contactsearch2000 PASSED
+performance.py::test_contactsearch1500 PASSED
+performance.py::test_contactsearch1000 PASSED
+performance.py::test_contactsearch500 PASSED
+performance.py::test_contactsearch100 PASSED
+performance.py::test_searchcompanybyid1 PASSED
+performance.py::test_companysearch9000 PASSED
+performance.py::test_companysearch4000 PASSED
+performance.py::test_companysearch3000 PASSED
+performance.py::test_companysearch2000 PASSED
+performance.py::test_companysearch1500 PASSED
+performance.py::test_companysearch1000 PASSED
+performance.py::test_companysearch500 PASSED
+performance.py::test_companysearch100 PASSED
+performance.py::test_searchcompanyproductmapping PASSED
+performance.py::test_searchcontactproductmapping PASSED
+productMapping.py::test_searchcompanybyid PASSED
+productMapping.py::test_searchcontactbyid PASSED
+sameEmailUsers.py::test_createbulkuser PASSED
+updateuser.py::test_createuser FAILED
+updateuser.py::test_updateall FAILED
+updateuser.py::test_listuser FAILED
+updateuser.py::test_usedseatsincrease FAILED
+updateuser.py::test_deletemodifieduser FAILED
+usedSeats.py::test_mongoinitialseats PASSED
+usedSeats.py::test_initialseats PASSED
+usedSeats.py::test_createbulkuser PASSED
+usedSeats.py::test_deletebulkuser PASSED
+
+================================== FAILURES ===================================
+_______________________________ test_firstname ________________________________
+
+    @pytest.mark.updateuser
+    def test_firstname():
+        """Update a user's firstName"""
+        url = baseUrl + userurl
+        new_name = 'Boom';
+        payload = {
+            'firstName': new_name,
+            'lastName': 'Hammond',
+            'licenseType': 'Enterprise',
+            'userName': 'Ann.Hammond761@pieology.com',
+            'emailId': 'Ann.Hammond761@pieology.com',
+            'recordId': 3105}
+        logging.info("Update a user's firstName to: %s" % new_firstName)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+        print(resp)
+>       assert resp["userName"] == emailId and resp["lastName"] == lastName and resp["firstName"] == new_name \
+            and resp["licenseType"] == licensetype and resp["subscriptionIds"][0] == subscriptionid and \
+            resp["isActive"] is True and resp["emailId"] == emailId
+E       AssertionError: assert ('Ann.Hammond761@pieology.com' == 'Stan.Swete698@workday.com'
+E         - Ann.Hammond761@pieology.com
+E         + Stan.Swete698@workday.com)
+
+administration.py:235: AssertionError
+________________________________ test_lastname ________________________________
+
+    @pytest.mark.updateuser
+    def test_lastname():
+        """Update a user's lastName"""
+        url = baseUrl + userurl
+        payload = {'lastName': new_lastName}
+        logging.info("Update a user's lastName to: %s" % new_lastName)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404]>.status_code
+
+administration.py:246: AssertionError
+________________________________ test_emailId _________________________________
+
+    @pytest.mark.updateuser
+    def test_emailId():
+        """Update a user's emailId"""
+        url = baseUrl + userurl
+        update_email = new_lastName + '.' + new_firstName + '@' + company + '.com'
+        payload = {'emailId': update_email}
+        logging.info("Update a user's emailId to: %s" % update_email)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+        assert r.status_code >= 200
+        resp = r.json()
+>       assert resp["userName"] == emailId and resp["lastName"] == new_lastName and resp["firstName"] == new_firstName \
+            and resp["licenseType"] == licensetype and resp["subscriptionIds"][0] == subscriptionid and \
+            resp["isActive"] is True and resp["source"] == "publicapi" and resp["emailId"] == update_email
+E       KeyError: 'userName'
+
+administration.py:263: KeyError
+_______________________________ test_updateall ________________________________
+
+    @pytest.mark.updateuser
+    def test_updateall():
+        """Update a user's firstName, lastName and emailId"""
+        url = baseUrl + userurl
+        payload = {'firstName': firstName, 'lastName': lastName, 'emailId': emailId}
+        logging.info("Update a user's firstName to: %s, lastName to: %s and emailId to: %s" % (firstName, lastName, emailId))
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404]>.status_code
+
+administration.py:275: AssertionError
+___________________________ test_deleteusernonexist ___________________________
+
+    @pytest.mark.deleteuser
+    def test_deleteusernonexist():
+        """Delete a single non-existing user"""
+        url = baseUrl + userurl + emailId
+        logging.info("Try to delete a non-existing user: %s" % emailId)
+        r = requests.delete(url, headers=header)
+>       assert r.status_code == 404
+E       assert 200 == 404
+E        +  where 200 = <Response [200]>.status_code
+
+administration.py:299: AssertionError
+___________________________ test_verifydeleteduser ____________________________
+
+    @pytest.mark.retrieveuser
+    def test_verifydeleteduser():
+        """Verify the deleted user not found"""
+        url = baseUrl + userurl + emailId
+        logging.info("Try to view a non-existing user: %s" % emailId)
+        r = requests.get(url, headers=header)
+>       assert r.status_code == 404
+E       assert 200 == 404
+E        +  where 200 = <Response [200]>.status_code
+
+administration.py:310: AssertionError
+_______________________ test_deletebulkusernonexisting ________________________
+
+    @pytest.mark.bulkusernegative
+    def test_deletebulkusernonexisting():
+        """Delete bulk non-existing users"""
+        url = baseUrl + bulkuser
+        payload = {"usernames": bulkUserNames}
+        logging.info("Try to delete non-existing bulk users: %s" % bulkUserNames)
+        r = requests.delete(url, data=json.dumps(payload), headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+        for j in range(0, len(resp)):
+>           assert resp[j]["userName"] in bulkUserNames and resp[j]["message"].strip() == 'User not found'
+E           AssertionError: assert ('Stanj.SweteR0@workday.com' in ['Stanj.SweteR0@workday.com', 'Stanw.Swetel1@workday.com', 'Stank.SweteH2@workday.com'] and 'Success' == 'User not found'
+E             - Success
+E             + User not found)
+
+administration.py:378: AssertionError
+______________________________ test_createuser3 _______________________________
+
+    @pytest.mark.createuser
+    def test_createuser3():
+        """Create a user for partial create bulk users test cases"""
+        url = baseUrl + userurl
+        payload = {
+            "firstName": first_name,
+            "lastName": last_name,
+            "licenseType": licensetype,
+            "userName": user_name,
+            "emailId": email_id,
+            "recordId": recordId
+        }
+        logging.info("Create a user")
+        r = requests.post(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 201
+E       assert 406 == 201
+E        +  where 406 = <Response [406]>.status_code
+
+administration.py:395: AssertionError
+_____________________________ test_retrieveuser2 ______________________________
+
+    @pytest.mark.retrieveuser
+    def test_retrieveuser2():
+        """Verify the newly created user"""
+        url = baseUrl + userurl + user_name
+        logging.info("View created user: %s" % user_name)
+        r = requests.get(url, headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+>       assert resp["userName"] == user_name and resp["licenseType"] == licensetype and resp["subscriptionIds"][0] \
+            == subscriptionid and resp["isActive"] is True and resp["source"] == "publicapi"
+E       KeyError: 'licenseType'
+
+administration.py:408: KeyError
+_______________________________ test_createuser _______________________________
+
+    @pytest.mark.createuser
+    def test_createuser():
+        """Create a single user"""
+        url = baseUrl + userurl
+        payload = user_payload
+        logging.info("Create a user: %s" % payload)
+        r = requests.post(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 201
+E       assert 406 == 201
+E        +  where 406 = <Response [406]>.status_code
+
+updateuser.py:76: AssertionError
+_______________________________ test_updateall ________________________________
+
+    @pytest.mark.updateuser
+    def test_updateall():
+        """Update a user's firstName, lastName and emailId"""
+        url = baseUrl + userurl + emailId
+        payload = {'firstName': new_firstName, 'lastName': new_lastName, 'emailId': new_emailId}
+        logging.info("Update a user's firstName to: %s, lastName to: %s and emailId to: %s" % (new_firstName, new_lastName, new_emailId))
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+updateuser.py:88: AssertionError
+________________________________ test_listuser ________________________________
+
+    @pytest.mark.listuser
+    def test_listuser():
+        """Verify list of users"""
+        url = baseUrl + userurl + listurl
+        logging.info("List users")
+        r = requests.get(url, headers=header)
+>       assert r.status_code == 200
+E       assert 406 == 200
+E        +  where 406 = <Response [406]>.status_code
+
+updateuser.py:104: AssertionError
+___________________________ test_usedseatsincrease ____________________________
+
+    @pytest.mark.mongodb
+    def test_usedseatsincrease():
+        # Connect to database contacts_stg
+        client = MongoClient("10.40.11.75", 27017)
+        db = client.user
+    
+        # Handle to collection
+        subscription = db.subscription
+    
+        # Query matchSource
+        subscription_list = subscription.find({"_id": ObjectId(subscriptionid)})
+        for item in subscription_list:
+>           assert user_id in item["userIds"]
+E           NameError: name 'user_id' is not defined
+
+updateuser.py:132: NameError
+___________________________ test_deletemodifieduser ___________________________
+
+    @pytest.mark.deleteuser
+    def test_deletemodifieduser():
+        """Delete modified user"""
+        url = baseUrl + userurl + emailId
+        logging.info("Delete a user: %s" % new_emailId)
+        r = requests.delete(url, headers=header)
+>       assert r.status_code == 200
+E       assert 406 == 200
+E        +  where 406 = <Response [406]>.status_code
+
+updateuser.py:141: AssertionError
+=================== 14 failed, 110 passed in 294.98 seconds ===================

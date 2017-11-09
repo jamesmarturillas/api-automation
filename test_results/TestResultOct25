@@ -1,0 +1,223 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.2, pytest-3.2.2, py-1.4.34, pluggy-0.4.0 -- c:\users\james.marturillas\appdata\local\programs\python\python36-32\python.exe
+cachedir: .cache
+rootdir: C:\Users\james.marturillas\Documents\automation\b2b\api\b2b-QAAutomation, inifile:
+collecting ... collected 124 items
+
+administration.py::test_createuser PASSED
+administration.py::test_retrieveuser1 PASSED
+administration.py::test_createuserduplicate PASSED
+administration.py::test_firstname FAILED
+administration.py::test_lastname FAILED
+administration.py::test_emailId FAILED
+administration.py::test_updateall FAILED
+administration.py::test_deleteuser PASSED
+administration.py::test_deleteusernonexist FAILED
+administration.py::test_verifydeleteduser FAILED
+administration.py::test_createbulkuser PASSED
+administration.py::test_viewsubscription PASSED
+administration.py::test_listuser PASSED
+administration.py::test_deletebulkuser PASSED
+administration.py::test_deletebulkusernonexisting FAILED
+administration.py::test_createuser3 FAILED
+administration.py::test_retrieveuser2 FAILED
+administration.py::test_deleteoneuser PASSED
+companydownloadlimit.py::test_viewsubscriptionbefore PASSED
+companydownloadlimit.py::test_mongoremovecompanyId PASSED
+companydownloadlimit.py::test_viewsubscriptionafter PASSED
+companydownloadlimit.py::test_onecompanydownloadlimit PASSED
+companydownloadlimit.py::test_onecompanydownloadlimitagain PASSED
+companydownloadlimit.py::test_multicompanydownloadlimit PASSED
+companysearch.py::test_companysearchbycompany PASSED
+companysearch.py::test_companysearchbycompanyhq <Response [200]>
+PASSED
+companysearch.py::test_companydetailssearch PASSED
+companysearch.py::test_companysearchbywebsite PASSED
+companysearch.py::test_companydetailswebsite PASSED
+companysearch.py::test_companysearchbyindustry PASSED
+companysearch.py::test_companydetailsindustry PASSED
+companysearch.py::test_companysearchbysubIndustry PASSED
+companysearch.py::test_companydetailssubIndustry PASSED
+companysearch.py::test_companysearchbycity PASSED
+companysearch.py::test_companysearchbystate PASSED
+companysearch.py::test_companysearchbycountry PASSED
+companysearch.py::test_companysearchbyregion PASSED
+companysearch.py::test_companysearchbyproduct PASSED
+companysearch.py::test_companydetailsproduct PASSED
+companysearch.py::test_companysearchbyproductParentCategory PASSED
+companysearch.py::test_companysearchbyproductCategory PASSED
+companysearch.py::test_companysearchbyall PASSED
+companysearch.py::test_companysearchlimitsize PASSED
+companysearch.py::test_companysearchlimitzerosize PASSED
+companysearch.py::test_companysearchinvalidlimitsize PASSED
+companysearch.py::test_companysearchminusonelimitsize PASSED
+companysearch.py::test_companysearchminusnumlimitsize PASSED
+companysearch.py::test_companysearchbycompanycomma Wabtec
+PASSED
+companysearch.py::test_companydetailssearchnamecomma PASSED
+companysearch.py::test_searchcompanybyid PASSED
+contactdownloadlimit.py::test_viewsubscriptionbefore PASSED
+contactdownloadlimit.py::test_mongoremovecontactid PASSED
+contactdownloadlimit.py::test_viewsubscriptionafter PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimit PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimitagain PASSED
+contactdownloadlimit.py::test_multicontactdownloadlimit PASSED
+contactsearch.py::test_contactsearchbycompany PASSED
+contactsearch.py::test_contactdetailssearch PASSED
+contactsearch.py::test_contactsearchbywebsite PASSED
+contactsearch.py::test_contactdetailswebsite PASSED
+contactsearch.py::test_contactsearchbytitle PASSED
+contactsearch.py::test_contactsearchbyemailid PASSED
+contactsearch.py::test_contactsearchbycity PASSED
+contactsearch.py::test_contactsearchbystate PASSED
+contactsearch.py::test_contactsearchbycountry PASSED
+contactsearch.py::test_contactsearchbyregion PASSED
+contactsearch.py::test_contactsearchbyproduct PASSED
+contactsearch.py::test_contactdetailsproduct PASSED
+contactsearch.py::test_contactsearchbyparentdepartment 
+
+================================== FAILURES ===================================
+_______________________________ test_firstname ________________________________
+
+    @pytest.mark.updateuser
+    def test_firstname():
+        """Update a user's firstName"""
+        url = baseUrl + userurl + emailId
+        payload = {'firstName': new_firstName}
+        logging.info("Update a user's firstName to: %s" % new_firstName)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+administration.py:225: AssertionError
+________________________________ test_lastname ________________________________
+
+    @pytest.mark.updateuser
+    def test_lastname():
+        """Update a user's lastName"""
+        url = baseUrl + userurl + emailId
+        payload = {'lastName': new_lastName}
+        logging.info("Update a user's lastName to: %s" % new_lastName)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+administration.py:240: AssertionError
+________________________________ test_emailId _________________________________
+
+    @pytest.mark.updateuser
+    def test_emailId():
+        """Update a user's emailId"""
+        url = baseUrl + userurl + emailId
+        update_email = new_lastName + '.' + new_firstName + '@' + company + '.com'
+        payload = {'emailId': update_email}
+        logging.info("Update a user's emailId to: %s" % update_email)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+        assert r.status_code >= 200
+        resp = r.json()
+>       assert resp["userName"] == emailId and resp["lastName"] == new_lastName and resp["firstName"] == new_firstName \
+            and resp["licenseType"] == licensetype and resp["subscriptionIds"][0] == subscriptionid and \
+            resp["isActive"] is True and resp["source"] == "publicapi" and resp["emailId"] == update_email
+E       KeyError: 'userName'
+
+administration.py:257: KeyError
+_______________________________ test_updateall ________________________________
+
+    @pytest.mark.updateuser
+    def test_updateall():
+        """Update a user's firstName, lastName and emailId"""
+        url = baseUrl + userurl + emailId
+        payload = {'firstName': firstName, 'lastName': lastName, 'emailId': emailId}
+        logging.info("Update a user's firstName to: %s, lastName to: %s and emailId to: %s" % (firstName, lastName, emailId))
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+administration.py:269: AssertionError
+___________________________ test_deleteusernonexist ___________________________
+
+    @pytest.mark.deleteuser
+    def test_deleteusernonexist():
+        """Delete a single non-existing user"""
+        url = baseUrl + userurl + emailId
+        logging.info("Try to delete a non-existing user: %s" % emailId)
+        r = requests.delete(url, headers=header)
+>       assert r.status_code == 404
+E       assert 200 == 404
+E        +  where 200 = <Response [200]>.status_code
+
+administration.py:293: AssertionError
+___________________________ test_verifydeleteduser ____________________________
+
+    @pytest.mark.retrieveuser
+    def test_verifydeleteduser():
+        """Verify the deleted user not found"""
+        url = baseUrl + userurl + emailId
+        logging.info("Try to view a non-existing user: %s" % emailId)
+        r = requests.get(url, headers=header)
+>       assert r.status_code == 404
+E       assert 200 == 404
+E        +  where 200 = <Response [200]>.status_code
+
+administration.py:304: AssertionError
+_______________________ test_deletebulkusernonexisting ________________________
+
+    @pytest.mark.bulkusernegative
+    def test_deletebulkusernonexisting():
+        """Delete bulk non-existing users"""
+        url = baseUrl + bulkuser
+        payload = {"usernames": bulkUserNames}
+        logging.info("Try to delete non-existing bulk users: %s" % bulkUserNames)
+        r = requests.delete(url, data=json.dumps(payload), headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+        for j in range(0, len(resp)):
+>           assert resp[j]["userName"] in bulkUserNames and resp[j]["message"].strip() == 'User not found'
+E           AssertionError: assert ('Aarong.CameronP0@oracle.com' in ['Aarong.CameronP0@oracle.com', 'AaronM.Cameronv1@oracle.com', 'AaronV.CameronD2@oracle.com'] and 'Success' == 'User not found'
+E             - Success
+E             + User not found)
+
+administration.py:372: AssertionError
+______________________________ test_createuser3 _______________________________
+
+    @pytest.mark.createuser
+    def test_createuser3():
+        """Create a user for partial create bulk users test cases"""
+        url = baseUrl + userurl
+        payload = {
+            "firstName": first_name,
+            "lastName": last_name,
+            "licenseType": licensetype,
+            "userName": user_name,
+            "emailId": email_id,
+            "recordId": recordId
+        }
+        logging.info("Create a user")
+        r = requests.post(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 201
+E       assert 406 == 201
+E        +  where 406 = <Response [406]>.status_code
+
+administration.py:389: AssertionError
+_____________________________ test_retrieveuser2 ______________________________
+
+    @pytest.mark.retrieveuser
+    def test_retrieveuser2():
+        """Verify the newly created user"""
+        url = baseUrl + userurl + user_name
+        logging.info("View created user: %s" % user_name)
+        r = requests.get(url, headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+>       assert resp["userName"] == user_name and resp["licenseType"] == licensetype and resp["subscriptionIds"][0] \
+            == subscriptionid and resp["isActive"] is True and resp["source"] == "publicapi"
+E       KeyError: 'licenseType'
+
+administration.py:402: KeyError
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+to show a full traceback on KeyboardInterrupt use --fulltrace
+c:\users\james.marturillas\appdata\local\programs\python\python36-32\lib\ssl.py:625: KeyboardInterrupt
+==================== 9 failed, 59 passed in 115.93 seconds ====================

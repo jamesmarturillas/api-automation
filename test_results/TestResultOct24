@@ -1,0 +1,333 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.2, pytest-3.2.2, py-1.4.34, pluggy-0.4.0 -- c:\users\james.marturillas\appdata\local\programs\python\python36-32\python.exe
+cachedir: .cache
+rootdir: C:\Users\james.marturillas\Documents\automation\b2b\api\b2b-QAAutomation, inifile:
+collecting ... collected 124 items
+
+administration.py::test_createuser PASSED
+administration.py::test_retrieveuser1 PASSED
+administration.py::test_createuserduplicate PASSED
+administration.py::test_firstname FAILED
+administration.py::test_lastname FAILED
+administration.py::test_emailId FAILED
+administration.py::test_updateall FAILED
+administration.py::test_deleteuser PASSED
+administration.py::test_deleteusernonexist FAILED
+administration.py::test_verifydeleteduser FAILED
+administration.py::test_createbulkuser PASSED
+administration.py::test_viewsubscription PASSED
+administration.py::test_listuser PASSED
+administration.py::test_deletebulkuser PASSED
+administration.py::test_deletebulkusernonexisting FAILED
+administration.py::test_createuser3 FAILED
+administration.py::test_retrieveuser2 FAILED
+administration.py::test_deleteoneuser PASSED
+companydownloadlimit.py::test_viewsubscriptionbefore PASSED
+companydownloadlimit.py::test_mongoremovecompanyId PASSED
+companydownloadlimit.py::test_viewsubscriptionafter PASSED
+companydownloadlimit.py::test_onecompanydownloadlimit PASSED
+companydownloadlimit.py::test_onecompanydownloadlimitagain PASSED
+companydownloadlimit.py::test_multicompanydownloadlimit PASSED
+companysearch.py::test_companysearchbycompany PASSED
+companysearch.py::test_companysearchbycompanyhq <Response [200]>
+PASSED
+companysearch.py::test_companydetailssearch PASSED
+companysearch.py::test_companysearchbywebsite PASSED
+companysearch.py::test_companydetailswebsite PASSED
+companysearch.py::test_companysearchbyindustry PASSED
+companysearch.py::test_companydetailsindustry PASSED
+companysearch.py::test_companysearchbysubIndustry PASSED
+companysearch.py::test_companydetailssubIndustry PASSED
+companysearch.py::test_companysearchbycity PASSED
+companysearch.py::test_companysearchbystate PASSED
+companysearch.py::test_companysearchbycountry PASSED
+companysearch.py::test_companysearchbyregion PASSED
+companysearch.py::test_companysearchbyproduct PASSED
+companysearch.py::test_companydetailsproduct PASSED
+companysearch.py::test_companysearchbyproductParentCategory PASSED
+companysearch.py::test_companysearchbyproductCategory PASSED
+companysearch.py::test_companysearchbyall PASSED
+companysearch.py::test_companysearchlimitsize PASSED
+companysearch.py::test_companysearchlimitzerosize PASSED
+companysearch.py::test_companysearchinvalidlimitsize PASSED
+companysearch.py::test_companysearchminusonelimitsize PASSED
+companysearch.py::test_companysearchminusnumlimitsize PASSED
+companysearch.py::test_companysearchbycompanycomma Wabtec
+PASSED
+companysearch.py::test_companydetailssearchnamecomma PASSED
+companysearch.py::test_searchcompanybyid PASSED
+contactdownloadlimit.py::test_viewsubscriptionbefore PASSED
+contactdownloadlimit.py::test_mongoremovecontactid PASSED
+contactdownloadlimit.py::test_viewsubscriptionafter PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimit PASSED
+contactdownloadlimit.py::test_onecontactdownloadlimitagain PASSED
+contactdownloadlimit.py::test_multicontactdownloadlimit PASSED
+contactsearch.py::test_contactsearchbycompany PASSED
+contactsearch.py::test_contactdetailssearch PASSED
+contactsearch.py::test_contactsearchbywebsite PASSED
+contactsearch.py::test_contactdetailswebsite PASSED
+contactsearch.py::test_contactsearchbytitle PASSED
+contactsearch.py::test_contactsearchbyemailid PASSED
+contactsearch.py::test_contactsearchbycity PASSED
+contactsearch.py::test_contactsearchbystate PASSED
+contactsearch.py::test_contactsearchbycountry PASSED
+contactsearch.py::test_contactsearchbyregion PASSED
+contactsearch.py::test_contactsearchbyproduct PASSED
+contactsearch.py::test_contactdetailsproduct PASSED
+contactsearch.py::test_contactsearchbyparentdepartment PASSED
+contactsearch.py::test_contactdetailsparentdepartment PASSED
+contactsearch.py::test_contactsearchbyseniority PASSED
+contactsearch.py::test_contactdetailsseniority PASSED
+contactsearch.py::test_contactsearchbyfullName PASSED
+contactsearch.py::test_contactsearchbyfirstname PASSED
+contactsearch.py::test_contactsearchbylastName PASSED
+contactsearch.py::test_contactsearchbyproductParentCategory PASSED
+contactsearch.py::test_contactsearchbyproductCategory PASSED
+contactsearch.py::test_contactsearchbyall PASSED
+contactsearch.py::test_contactsearchlimitsize PASSED
+contactsearch.py::test_contactsearchlimitzerosize PASSED
+contactsearch.py::test_contactsearchinvalidlimitsize PASSED
+contactsearch.py::test_contactsearchminusonelimitsize PASSED
+contactsearch.py::test_contactsearchminusnumlimitsize PASSED
+contactsearch.py::test_contactsearchemailphone PASSED
+contactsearch.py::test_contactsearchemailnonphone PASSED
+contactsearch.py::test_contactsearchbycompanycomma PASSED
+contactsearch.py::test_contactdetailssearchcompanycomma PASSED
+createcsvfile.py::test_contactfullnamecompanyname500 PASSED
+createcsvfile.py::test_contactfullnamecompanyname1000 PASSED
+createcsvfile.py::test_contactfullnamewebsite500 PASSED
+createcsvfile.py::test_contactfirstlastcompanyname500 PASSED
+createcsvfile.py::test_contactfirstlastwebsite500 PASSED
+createcsvfile.py::test_contactfirstlastwebsite2000 PASSED
+createcsvfile.py::test_contactcreateId500 PASSED
+performance.py::test_contactsearch1 PASSED
+performance.py::test_contactsearch4000 PASSED
+performance.py::test_contactsearch2000 PASSED
+performance.py::test_contactsearch1500 PASSED
+performance.py::test_contactsearch1000 PASSED
+performance.py::test_contactsearch500 PASSED
+performance.py::test_contactsearch100 PASSED
+performance.py::test_searchcompanybyid1 PASSED
+performance.py::test_companysearch9000 PASSED
+performance.py::test_companysearch4000 PASSED
+performance.py::test_companysearch3000 PASSED
+performance.py::test_companysearch2000 PASSED
+performance.py::test_companysearch1500 PASSED
+performance.py::test_companysearch1000 PASSED
+performance.py::test_companysearch500 PASSED
+performance.py::test_companysearch100 PASSED
+performance.py::test_searchcompanyproductmapping PASSED
+performance.py::test_searchcontactproductmapping PASSED
+productMapping.py::test_searchcompanybyid PASSED
+productMapping.py::test_searchcontactbyid PASSED
+sameEmailUsers.py::test_createbulkuser PASSED
+updateuser.py::test_createuser PASSED
+updateuser.py::test_updateall FAILED
+updateuser.py::test_listuser ['584e2cbbe4b046bb00f4e802', '5890e242e4b09dff05f82d1a', '58db3103b3a00331b05af249', '58db311cb3a00331b05af24a', '58db311db3a00331b05af24b', '58e1fc36e4b0c736ce722f4f', '58e6d1c2e4b0c736ce7231a3', '58e73007e4b0386b9685a1ab', '58eeb852e4b01a1de85d4418', '58eec838e4b01a1de85d4542', '58eecccde4b01a1de85d4625', '58eed261e4b01a1de85d4862', '58eed29be4b01a1de85d4875', '58eed66ee4b01a1de85d48e3', '58eeda6ae4b01a1de85d49d2', '58eee2e8e4b01a1de85d4a8e', '58eee448e4b01a1de85d4b19', '58f5ab29e4b0ee1869a398b9', '58f5b16fe4b0ee1869a3994c', '58f5bdcce4b0ee1869a39a1c', '58f5c021e4b0ee1869a39a6e', '58f5c1bee4b0b9080b913623', '58f6ad85e4b04a7e19b38c12', '58f7b99de4b04a7e19b38edd', '58f7ba36e4b04a7e19b38ef7', '58f7f099e4b04a7e19b3902c', '58f9aefee4b055e0afbc049f', '59007277e4b0f62f8bbfa1b0', '59014171e4b055e0afbc09f7', '59014614e4b055e0afbc0a87', '5901468ee4b055e0afbc0adb', '590149b5e4b055e0afbc0b4c', '59017949e4b0f62f8bbfa3c9', '59019627e4b0f62f8bbfa45b', '590a4e7ce4b0ec6f4c2eee74', '590a4e7ce4b0ec6f4c2eee75', '590a4e7ce4b0ec6f4c2eee76', '591167a0db1770b84c03505e', '59151966e4b0270f69e6ec04', '59223b2bdb1770b84c081cfd', '5990f1fde4b095e02dbfd060', '5990f74de4b095e02dbfd0aa', '599249eae4b095e02dbfd2ae', '5992555ae4b095e02dbfd343', '59a50c90e4b0e5c4618b9bd6', '59a50f17e4b0e5c4618b9ce1', '59a78ca7e4b0e5c4618b9e30', '59b5fdc7e4b0e5c4618ba248', '59bb5915e4b04f69ec7f189b', '59c087afe4b04f69ec7f1b8f', '59c86186e4b0143814b6349a', '59c865a6e4b0143814b6355d', '59c982b3e4b0143814b63741', '59c99114e4b0143814b63804', '59cc389de4b0a3115e64ab86', '59cc3a65e4b0a3115e64ac11', '59cd8107e4b024b36434bfdd', '59cda4b6e4b024b36434c0f9', '59cdac92e4b024b36434c1ab', '59cdb209e4b024b36434c2f5', '59d171aae4b0b61c3558dff1', '59d2c9fae4b0b61c3558e0a0', '59d55fe0e4b0b61c3558e391', '59d6af7ee4b0b61c3558e4a7', '59daa5a4e4b0b61c3558e61c', '59dbded0e4b0fd8551cf5196', '59dbe84be4b0fd8551cf5244', '59dbeb8ae4b0fd8551cf52d1', '59dc15e7e4b0fd8551cf5361', '59dd4733e4b0fd8551cf5465', '59de9bfbe4b014d5a7933ee0', '59dfeadbe4b0926f24269f02', '59e3de6ce4b0926f2426a007', '59e53ec2e4b0459f1d64534f', '59e54016e4b0459f1d6453ea', '59e68490e4b02be8be62ff99', '59e7d740e4b036262a6a9eac', '59e7d8b5e4b036262a6a9f57', '59e7dad6e4b036262a6a9feb', '59e7df9be4b036262a6aa079', '59e7ef89e4b036262a6aa109', '59e800bfe4b036262a6aa196', '59e8091fe4b0eb04c63b9944', '59e8091fe4b0eb04c63b9946', '59e80927e4b0eb04c63b994c', '59e80927e4b0eb04c63b994d', '59e80927e4b0eb04c63b994e', '59e80927e4b0eb04c63b994f', '59e80927e4b0eb04c63b9950', '59e80927e4b0eb04c63b9951', '59e80927e4b0eb04c63b9952', '59e80b34e4b0eb04c63b9958', '59e80b3be4b0eb04c63b9963', '59e80b3be4b0eb04c63b9964', '59e80c59e4b0eb04c63b996d', '59e80c5fe4b0eb04c63b9978', '59e80c5fe4b0eb04c63b9979', '59e80c5fe4b0eb04c63b997a', '59e80d56e4b0eb04c63b99e9', '59e80d5ee4b0eb04c63b99f0', '59e80d5ee4b0eb04c63b99f1', '59e80d5ee4b0eb04c63b99f2', '59e80d5ee4b0eb04c63b99f3', '59e80d5ee4b0eb04c63b99f4', '59e80d5ee4b0eb04c63b99f5', '59e80d5ee4b0eb04c63b99f6', '59e80d89e4b0eb04c63b99f9', '59e80d90e4b0eb04c63b9a04', '59e80d90e4b0eb04c63b9a05', '59e80d90e4b0eb04c63b9a06', '59e80df5e4b0eb04c63b9a0f', '59e80dfae4b0eb04c63b9a1a', '59e80dfae4b0eb04c63b9a1b', '59e80dfae4b0eb04c63b9a1c', '59e80e27e4b0eb04c63b9a25', '59e80e2be4b0eb04c63b9a30', '59e80e2be4b0eb04c63b9a31', '59e80e2be4b0eb04c63b9a32', '59e80f14e4b0eb04c63b9aa4', '59e80f14e4b0eb04c63b9aa6', '59e80f1ae4b0eb04c63b9aac', '59e80f1be4b0eb04c63b9aad', '59e80f1be4b0eb04c63b9aae', '59e80f1be4b0eb04c63b9aaf', '59e80f1be4b0eb04c63b9ab0', '59e80f1be4b0eb04c63b9ab1', '59e80f1be4b0eb04c63b9ab2', '59e80f4ae4b0eb04c63b9ab6', '59e80fcbe4b0eb04c63b9ab8', '59e80fcfe4b0eb04c63b9ac3', '59e80fcfe4b0eb04c63b9ac4', '59e80fcfe4b0eb04c63b9ac5', '59e81190e4b0eb04c63b9ace', '59e81195e4b0eb04c63b9ad9', '59e81195e4b0eb04c63b9ada', '59e81195e4b0eb04c63b9adb', '59e81222e4b0eb04c63b9b32', '59e81226e4b0eb04c63b9b3d', '59e81226e4b0eb04c63b9b3e', '59e81226e4b0eb04c63b9b3f', '59e8130fe4b0eb04c63b9bae', '59e81316e4b0eb04c63b9bb5', '59e81316e4b0eb04c63b9bb6', '59e81316e4b0eb04c63b9bb7', '59e81316e4b0eb04c63b9bb8', '59e81316e4b0eb04c63b9bb9', '59e81316e4b0eb04c63b9bba', '59e81316e4b0eb04c63b9bbb', '59e813a2e4b0eb04c63b9bbe', '59e813a7e4b0eb04c63b9bc9', '59e813a7e4b0eb04c63b9bca', '59e813a7e4b0eb04c63b9bcb', '59e814e8e4b0eb04c63b9c05', '59e814ece4b0eb04c63b9c10', '59e814ece4b0eb04c63b9c11', '59e814ece4b0eb04c63b9c12', '59e815e5e4b0eb04c63b9c81', '59e815e5e4b0eb04c63b9c83', '59e815f0e4b0eb04c63b9c89', '59e815f0e4b0eb04c63b9c8a', '59e815f0e4b0eb04c63b9c8b', '59e815f0e4b0eb04c63b9c8c', '59e815f0e4b0eb04c63b9c8d', '59e815f0e4b0eb04c63b9c8e', '59e815f0e4b0eb04c63b9c8f', '59e816eae4b0eb04c63b9c92', '59e816eee4b0eb04c63b9c9d', '59e816eee4b0eb04c63b9c9e', '59e816eee4b0eb04c63b9c9f', '59e817afe4b0eb04c63b9d0e', '59e817b0e4b0eb04c63b9d10', '59e817b6e4b0eb04c63b9d16', '59e817b6e4b0eb04c63b9d17', '59e817b6e4b0eb04c63b9d18', '59e817b6e4b0eb04c63b9d19', '59e817b6e4b0eb04c63b9d1a', '59e817b6e4b0eb04c63b9d1b', '59e817b6e4b0eb04c63b9d1c', '59e8245ae4b07051d3dfd75e', '59e8245ee4b07051d3dfd765', '59e8245ee4b07051d3dfd766', '59e8245ee4b07051d3dfd767', '59e82553e4b07051d3dfd7d6', '59e82553e4b07051d3dfd7d8', '59e82559e4b07051d3dfd7dd', '59e82559e4b07051d3dfd7de', '59e82559e4b07051d3dfd7df', '59e82559e4b07051d3dfd7e0', '59e82559e4b07051d3dfd7e1', '59e82559e4b07051d3dfd7e2', '59e82559e4b07051d3dfd7e3', '59e82583e4b07051d3dfd7e6', '59e82585e4b07051d3dfd7eb', '59e82585e4b07051d3dfd7ec', '59e82585e4b07051d3dfd7ed', '59e82687e4b07051d3dfd859', '59e82687e4b07051d3dfd85b', '59e8268ae4b07051d3dfd85f', '59e8268ae4b07051d3dfd860', '59e8268ae4b07051d3dfd861', '59e8268ae4b07051d3dfd862', '59e8268ae4b07051d3dfd863', '59e8268ae4b07051d3dfd864', '59e8268ae4b07051d3dfd865', '59e92576e4b07051d3dfd8ae', '59e92578e4b07051d3dfd8b3', '59e92578e4b07051d3dfd8b4', '59e92578e4b07051d3dfd8b5', '59e9267ce4b07051d3dfd93d', '59e9267de4b07051d3dfd93f', '59e92680e4b07051d3dfd943', '59e92680e4b07051d3dfd944', '59e92680e4b07051d3dfd945', '59e92680e4b07051d3dfd946', '59e92680e4b07051d3dfd947', '59e92680e4b07051d3dfd948', '59e92680e4b07051d3dfd949', '59ed1ac2e4b07051d3dfd99f', '59ed1ac5e4b07051d3dfd9a4', '59ed1ac5e4b07051d3dfd9a5', '59ed1ac5e4b07051d3dfd9a6', '59ed1bc4e4b07051d3dfda12', '59ed1bc4e4b07051d3dfda14', '59ed1bc7e4b07051d3dfda18', '59ed1bc8e4b07051d3dfda19', '59ed1bc8e4b07051d3dfda1a', '59ed1bc8e4b07051d3dfda1b', '59ed1bc8e4b07051d3dfda1c', '59ed1bc8e4b07051d3dfda1d', '59ed1bc8e4b07051d3dfda1e', '59ed9899e4b07b675f5594ea', '59ed98a0e4b07b675f5594f1', '59ed98a0e4b07b675f5594f2', '59ed98a0e4b07b675f5594f3', '59ed98eee4b07b675f559551', '59ed98efe4b07b675f559553', '59ed98f6e4b07b675f559558', '59ed98f6e4b07b675f559559', '59ed98f6e4b07b675f55955a', '59ed98f6e4b07b675f55955b', '59ed98f6e4b07b675f55955c', '59ed98f6e4b07b675f55955d', '59ed98f6e4b07b675f55955e', '59ed9be9e4b011966390f4ea', '59ed9befe4b011966390f4f1', '59ed9befe4b011966390f4f2', '59ed9befe4b011966390f4f3', '59ed9cb9e4b011966390f562', '59ed9cbae4b011966390f564', '59ed9cc3e4b011966390f569', '59ed9cc3e4b011966390f56a', '59ed9cc3e4b011966390f56b', '59ed9cc3e4b011966390f56c', '59ed9cc3e4b011966390f56d', '59ed9cc3e4b011966390f56e', '59ed9cc3e4b011966390f56f', '59ee6ae2e4b011966390f579', '59ee6ae9e4b011966390f580', '59ee6ae9e4b011966390f581', '59ee6ae9e4b011966390f582', '59ee6ba5e4b011966390f608', '59ee6ba6e4b011966390f60a']
+FAILED
+updateuser.py::test_usedseatsincrease FAILED
+updateuser.py::test_deletemodifieduser PASSED
+usedSeats.py::test_mongoinitialseats PASSED
+usedSeats.py::test_initialseats PASSED
+usedSeats.py::test_createbulkuser PASSED
+usedSeats.py::test_deletebulkuser PASSED
+
+================================== FAILURES ===================================
+_______________________________ test_firstname ________________________________
+
+    @pytest.mark.updateuser
+    def test_firstname():
+        """Update a user's firstName"""
+        url = baseUrl + userurl + emailId
+        payload = {'firstName': new_firstName}
+        logging.info("Update a user's firstName to: %s" % new_firstName)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+administration.py:225: AssertionError
+________________________________ test_lastname ________________________________
+
+    @pytest.mark.updateuser
+    def test_lastname():
+        """Update a user's lastName"""
+        url = baseUrl + userurl + emailId
+        payload = {'lastName': new_lastName}
+        logging.info("Update a user's lastName to: %s" % new_lastName)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+administration.py:239: AssertionError
+________________________________ test_emailId _________________________________
+
+    @pytest.mark.updateuser
+    def test_emailId():
+        """Update a user's emailId"""
+        url = baseUrl + userurl + emailId
+        update_email = new_lastName + '.' + new_firstName + '@' + company + '.com'
+        payload = {'emailId': update_email}
+        logging.info("Update a user's emailId to: %s" % update_email)
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+        assert r.status_code >= 200
+        resp = r.json()
+>       assert resp["userName"] == emailId and resp["lastName"] == new_lastName and resp["firstName"] == new_firstName \
+            and resp["licenseType"] == licensetype and resp["subscriptionIds"][0] == subscriptionid and \
+            resp["isActive"] is True and resp["source"] == "publicapi" and resp["emailId"] == update_email
+E       KeyError: 'userName'
+
+administration.py:256: KeyError
+_______________________________ test_updateall ________________________________
+
+    @pytest.mark.updateuser
+    def test_updateall():
+        """Update a user's firstName, lastName and emailId"""
+        url = baseUrl + userurl + emailId
+        payload = {'firstName': firstName, 'lastName': lastName, 'emailId': emailId}
+        logging.info("Update a user's firstName to: %s, lastName to: %s and emailId to: %s" % (firstName, lastName, emailId))
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+administration.py:268: AssertionError
+___________________________ test_deleteusernonexist ___________________________
+
+    @pytest.mark.deleteuser
+    def test_deleteusernonexist():
+        """Delete a single non-existing user"""
+        url = baseUrl + userurl + emailId
+        logging.info("Try to delete a non-existing user: %s" % emailId)
+        r = requests.delete(url, headers=header)
+>       assert r.status_code == 404
+E       assert 200 == 404
+E        +  where 200 = <Response [200]>.status_code
+
+administration.py:292: AssertionError
+___________________________ test_verifydeleteduser ____________________________
+
+    @pytest.mark.retrieveuser
+    def test_verifydeleteduser():
+        """Verify the deleted user not found"""
+        url = baseUrl + userurl + emailId
+        logging.info("Try to view a non-existing user: %s" % emailId)
+        r = requests.get(url, headers=header)
+>       assert r.status_code == 404
+E       assert 200 == 404
+E        +  where 200 = <Response [200]>.status_code
+
+administration.py:303: AssertionError
+_______________________ test_deletebulkusernonexisting ________________________
+
+    @pytest.mark.bulkusernegative
+    def test_deletebulkusernonexisting():
+        """Delete bulk non-existing users"""
+        url = baseUrl + bulkuser
+        payload = {"usernames": bulkUserNames}
+        logging.info("Try to delete non-existing bulk users: %s" % bulkUserNames)
+        r = requests.delete(url, data=json.dumps(payload), headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+        for j in range(0, len(resp)):
+>           assert resp[j]["userName"] in bulkUserNames and resp[j]["message"].strip() == 'User not found'
+E           assert ("A'Jalonv.Oxendinen0@jacobs.com" in ["A'Jalonv.Oxendinen0@jacobs.com", "A'Jalono.Oxendineb1@jacobs.com", "A'Jalonf.Oxendinep2@jacobs.com"] and 'Success' == 'User not found'
+E             - Success
+E             + User not found)
+
+administration.py:371: AssertionError
+______________________________ test_createuser3 _______________________________
+
+    @pytest.mark.createuser
+    def test_createuser3():
+        """Create a user for partial create bulk users test cases"""
+        url = baseUrl + userurl
+        payload = {
+            "firstName": first_name,
+            "lastName": last_name,
+            "licenseType": licensetype,
+            "userName": user_name,
+            "emailId": email_id,
+            "recordId": recordId
+        }
+        logging.info("Create a user")
+        r = requests.post(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 201
+E       assert 406 == 201
+E        +  where 406 = <Response [406]>.status_code
+
+administration.py:388: AssertionError
+_____________________________ test_retrieveuser2 ______________________________
+
+    @pytest.mark.retrieveuser
+    def test_retrieveuser2():
+        """Verify the newly created user"""
+        url = baseUrl + userurl + user_name
+        logging.info("View created user: %s" % user_name)
+        r = requests.get(url, headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+>       assert resp["userName"] == user_name and resp["licenseType"] == licensetype and resp["subscriptionIds"][0] \
+            == subscriptionid and resp["isActive"] is True and resp["source"] == "publicapi"
+E       KeyError: 'licenseType'
+
+administration.py:401: KeyError
+_______________________________ test_updateall ________________________________
+
+    @pytest.mark.updateuser
+    def test_updateall():
+        """Update a user's firstName, lastName and emailId"""
+        url = baseUrl + userurl + emailId
+        payload = {'firstName': new_firstName, 'lastName': new_lastName, 'emailId': new_emailId}
+        logging.info("Update a user's firstName to: %s, lastName to: %s and emailId to: %s" % (new_firstName, new_lastName, new_emailId))
+        r = requests.put(url, data=json.dumps(payload), headers=header)
+>       assert r.status_code == 200
+E       assert 206 == 200
+E        +  where 206 = <Response [206]>.status_code
+
+updateuser.py:88: AssertionError
+________________________________ test_listuser ________________________________
+
+    @pytest.mark.listuser
+    def test_listuser():
+        """Verify list of users"""
+        url = baseUrl + userurl + listurl
+        logging.info("List users")
+        r = requests.get(url, headers=header)
+        assert r.status_code == 200
+        resp = r.json()
+        global user_ids
+        user_ids = []
+        if resp is None:
+            pass
+        else:
+            user_num = len(resp)
+            for k in range(0, user_num):
+                assert resp[k]['subscriptionIds'][0] == subscriptionid
+                if resp[k]["isActive"] is True:
+                    user_ids.append(resp[k]["id"])
+            print (user_ids)
+>           assert user_id in user_ids
+E           NameError: name 'user_id' is not defined
+
+updateuser.py:117: NameError
+___________________________ test_usedseatsincrease ____________________________
+
+    @pytest.mark.mongodb
+    def test_usedseatsincrease():
+        # Connect to database contacts_stg
+        client = MongoClient("10.40.11.75", 27017)
+        db = client.user
+    
+        # Handle to collection
+        subscription = db.subscription
+    
+        # Query matchSource
+        subscription_list = subscription.find({"_id": ObjectId(subscriptionid)})
+        for item in subscription_list:
+>           assert user_id in item["userIds"]
+E           NameError: name 'user_id' is not defined
+
+updateuser.py:132: NameError
+=================== 12 failed, 112 passed in 204.83 seconds ===================
